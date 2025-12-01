@@ -175,6 +175,7 @@ class Mirror:
                     "ID": u.pk,
                     "Usuario": u.username,
                     "Nombre": u.full_name,
+                    "Foto de perfil": u.profile_pic_url
                 }
                 for u in following.values()
             ]
@@ -201,6 +202,7 @@ class Mirror:
                     "ID": u.pk,
                     "Usuario": u.username,
                     "Nombre": u.full_name,
+                    "Foto de perfil": u.profile_pic_url
                 }
                 for u in followers.values()
             ]

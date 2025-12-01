@@ -8,11 +8,11 @@ def banner1():
 \ \ \-./\ \\ \ \\ \  __< \ \  __< \ \ \/\ \\ \  __<   
  \ \_\ \ \_\\ \_\\ \_\ \_\\ \_\ \_\\ \_____\\ \_\ \_\ 
   \/_/  \/_/ \/_/ \/_/ /_/ \/_/ /_/ \/_____/ \/_/ /_/  ''' + Style.RESET_ALL)
-    print(Style.BRIGHT + Fore.MAGENTA + "https://github.com/he4tw4ve/MirrorForInstagram.git\n" + Style.RESET_ALL)
+    print(Style.BRIGHT + Fore.CYAN + "https://github.com/he4tw4ve/MirrorForInstagram.git\n" + Style.RESET_ALL)
 
 def banner2():
       UNDERLINE = "\033[4m"
-      print(Style.BRIGHT + Fore.YELLOW + r'''
+      print(Style.BRIGHT + Fore.MAGENTA + r'''
     __  ___   ____   ____     ____     ____     ____ 
    /  |/  /  /  _/  / __ \   / __ \   / __ \   / __ \
   / /|_/ /   / /   / /_/ /  / /_/ /  / / / /  / /_/ /
@@ -53,12 +53,12 @@ ___  ___  _____  ______  ______   _____  ______
 
 def banner5():
       print(Style.BRIGHT + Fore.YELLOW + r'''
- ___      ___   __      _______    _______     ______     _______   
-|"  \    /"  | |" \    /"      \  /"      \   /    " \   /"      \  
- \   \  //   | ||  |  |:        ||:        | // ____  \ |:        | 
- /\\  \/.    | |:  |  |_____/   )|_____/   )/  /    ) :)|_____/   ) 
-|: \.        | |.  |   //      /  //      /(: (____/ //  //      /  
-|.  \    /:  | /\  |\ |:  __   \ |:  __   \ \        /  |:  __   \  
-|___|\__/|___|(__\_|_)|__|  \___)|__|  \___) \"_____/   |__|  \___)  ''' + Style.RESET_ALL)
+ ___      ___   __     _______    _______     ______     _______   
+|"  \    /"  | |" \   /"      \  /"      \   /    " \   /"      \  
+ \   \  //   | ||  | |:        ||:        | // ____  \ |:        | 
+ /\\  \/.    | |:  | |_____/   )|_____/   )/  /    ) :)|_____/   ) 
+|: \.        | |.  |  //      /  //      /(: (____/ //  //      /  
+|.  \    /:  | |\  | |:  __   \ |:  __   \ \        /  |:  __   \  
+|___|\__/|___| |___| |__|  \___)|__|  \___) \"_____/   |__|  \___)  ''' + Style.RESET_ALL)
       print(Style.BRIGHT + Fore.MAGENTA + "https://github.com/he4tw4ve/MirrorForInstagram.git\n" + Style.RESET_ALL)
                                                                     
