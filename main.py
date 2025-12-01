@@ -1,6 +1,7 @@
 from mirror import Mirror
 import os
 import shutil
+from banner import banner1
 
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -42,6 +43,8 @@ def print_user_table(users, title=None):
         print(f"{usuario.ljust(uname_col)}{' ' * spacing}{nombre.ljust(name_col)}{' ' * spacing}{uid.rjust(id_col)}")
 
 def main():
+    cls()
+    banner1()
     ig = None
     
     # First, try to use saved session (no credentials needed yet)
@@ -58,7 +61,7 @@ def main():
 
     while True:
         cls()
-        print ("================ Mirror for Instagram ===================")
+        banner1()
         commands()
 
         cmd = input("mirror> ").strip().split()
@@ -89,6 +92,18 @@ def main():
             if followers is not None:
                 print(f"Total followers: {len(followers)}")
                 print_user_table(followers)
+
+            pause()
+
+        # following
+        elif action == "following" and len(cmd) == 2:
+            target = cmd[1]
+            print(f"\nFollowing de {target}:\n")
+            following = ig.getFollowing(target)
+
+            if following is not None:
+                print(f"Total following: {len(following)}")
+                print_user_table(following)
 
             pause()
 
